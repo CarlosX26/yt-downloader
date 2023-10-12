@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+main {
+  background-color: #212121;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: center;
+  align-items: center;
+}
+
+main h1 {
+  color: #fff;
+}
+main h1 span {
+  color: #ff0000;
+}
+
+main form div {
+  width: 384px;
+  display: flex;
+}
+
+main form div input {
+  width: 80%;
+  height: 48px;
+  padding-left: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #fafafa;
+}
+main form div button {
+  width: 20%;
+  height: 48px;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 0 8px;
+  font-weight: 600;
+  background-color: #fafafa;
+}
+main form div button:hover {
+  background-color: #e0e0e0;
+}
+
+@media (width <= 400px) {
+  main form div {
+    width: 272px;
+  }
+
+  main h1 {
+    font-size: 24px;
+  }
+
+  main form div input {
+    width: 75%;
+  }
+  main form div button {
+    width: 25%;
+  }
+}
